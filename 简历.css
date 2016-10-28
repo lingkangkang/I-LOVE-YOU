@@ -1,0 +1,98 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+#introduceHead{
+    max-width: 600px;
+    min-width: 320px;
+    margin: 0 auto;
+    position: relative;
+
+}
+#introduceH1{
+    width: 400px;
+    height: 400px;
+    font-size: 100px;
+    text-align: center;
+    line-height: 400px;
+    border-radius:400px;
+    background-color: red;
+    margin: 0 auto;
+    position: absolute;
+    animation:introduceH1 2s 2s linear infinite;
+
+
+
+}
+#introduceH2{
+    width: 400px;
+    height: 400px;
+    font-size: 100px;
+    text-align: center;
+    line-height: 400px;
+    border-radius:400px;
+    background-color: yellow;
+    margin: 0 auto;
+    position: absolute;
+    animation:introduceH2 4s  linear infinite ;
+
+}
+#introduceH3{
+    width: 400px;
+    height: 400px;
+    font-size: 100px;
+    text-align: center;
+    line-height: 400px;
+    background-color: blue;
+    margin: 0 auto;
+    position: absolute;
+    border-radius:40px;
+    transition:  background-color 2s , font-size 2s,transform 2s,height 2s,border-radius 2s;
+
+}
+#introduceH3:hover{
+    background-color:transparent;
+    font-size: 0px;
+    transform: rotateZ(360deg);
+
+    border-radius:400px
+}
+
+@keyframes introduceH2 {
+     from{
+         background-color: yellow;
+         color: black;
+         font-size: 100px;
+         transform: rotateX(0deg);
+
+
+     }
+     to{
+         background-color: transparent;
+         color: transparent;
+         font-size: 0px;
+         transform: rotateX(360deg);
+
+
+
+     }
+ }@keyframes introduceH1 {
+      from{
+          background-color:  red;
+          color: black;
+          font-size: 100px;
+          transform: rotateY(0deg);
+
+
+
+      }
+      to{
+          background-color: transparent;
+          color: transparent;
+          font-size: 0px;
+          transform: rotateY(360deg);
+
+
+
+      }
+  }
